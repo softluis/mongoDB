@@ -13,6 +13,12 @@ pipeline {
             steps {
                 echo 'ls'
             }
+            }
+		stage('create container'){
+			 steps {
+                 		sh 'docker run -d --name mongoBD mongo 5000:5000'
+			
+            	} 
         }
     }
     post {
