@@ -9,4 +9,4 @@ COPY app.py /opt/app.py
 
 EXPOSE 5000
 
-ENTRYPOINT ["mongo", "/opt/app.py"]
+ENTRYPOINT ["python", "/opt/app.py"]
