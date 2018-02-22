@@ -16,7 +16,7 @@ pipeline {
             }
 		stage('create container'){
 			 steps {
-                 		sh 'docker run -d --name mongoBD mongo 5000:5000'
+                 		sh 'docker run -d --name mongoBD mongo -p 5000:5000'
 			
             	} 
         }
